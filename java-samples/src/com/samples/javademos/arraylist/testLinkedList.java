@@ -15,15 +15,28 @@ public class testLinkedList {
 		placesToVisit.add("Kanyakumari");
 		placesToVisit.add("London");
 
-		
 		System.out.println(placesToVisit.contains("Mumbai"));
 		System.out.println(placesToVisit.indexOf("Australia"));
 		System.out.println(placesToVisit.contains("Delhi"));
-//		printList(placesToVisit);
-//
-//		printList2(placesToVisit);
+		printList(placesToVisit);
+		printList(placesToVisit);
+		printList2(placesToVisit);
+		printList3(placesToVisit);
 
 	}
+
+//	private static void printList(List<String> placesToVisit) {
+//
+//		Iterator<String> it = placesToVisit.iterator();
+//
+//	System.out.println(it.hasNext());
+//	System.out.println(it.next());
+//
+//		while (it.hasNext()) {
+//			System.out.println(it.next());
+//		}
+//
+//	}
 
 	private static void printList(List<String> mylist) {
 		Iterator<String> it = mylist.iterator();
@@ -32,6 +45,7 @@ public class testLinkedList {
 			if (element.equalsIgnoreCase("mumbai")) {
 				System.out.println("removing mumbai..");
 				it.remove();
+				//for viewing call function it one more time
 			}
 			System.out.println("Now visiting... " + element);
 		}
@@ -47,9 +61,9 @@ public class testLinkedList {
 		System.out.println("-----------------------");
 
 	}
-
+	
 	private static void printList3(List<String> mylist) {
-		for (Iterator it = mylist.iterator(); it.hasNext();) {
+		for (Iterator<String> it = mylist.iterator(); it.hasNext();) {
 			System.out.println(it.next());
 		}
 	}

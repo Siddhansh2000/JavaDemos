@@ -15,6 +15,12 @@ public class testArrayList3 {
 			
 			System.out.println("Enter " + inputSize + " integer values.\r");
 			for (int i=0; i<inputSize; i++) {
+			
+//				int j = scanner.nextInt();
+//				intList.add(j);
+				
+//				Refractor -> inline (select j)
+				
 				intList.add(scanner.nextInt());
 			}
 			
@@ -22,6 +28,10 @@ public class testArrayList3 {
 				System.out.println(i);
 			
 			Object[] newobjarray = intList.toArray();
+			
+//			for(Object i: newobjarray)
+//				System.out.println(i);
+			
 			System.out.println(Arrays.toString(newobjarray));
 			
 //			int[] newintarray = new int[intList.size()];

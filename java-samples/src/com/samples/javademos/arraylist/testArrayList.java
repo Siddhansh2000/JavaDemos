@@ -1,5 +1,5 @@
 package com.samples.javademos.arraylist;
-
+ 
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +16,7 @@ public static void main(String[] args) {
 		System.out.println("strList: " + strList);
 		
 		int x = 10;
+		int q = 11;
 		Integer z = Integer.valueOf(x);	// this process of converting primitive 
 										//   to wrapper, is called 'Boxing'
 		Integer newvar = 11;			// Auto-Boxing
@@ -24,7 +25,7 @@ public static void main(String[] args) {
 		List<Integer> list1 = new ArrayList<Integer>();
 		list1.add(1);
 		list1.add(2);
-		list1.add(3);
+		list1.add(23);
 		list1.add(3);
 		list1.add(null);
 		System.out.println("list1 = " + list1);
@@ -39,9 +40,9 @@ public static void main(String[] args) {
 		
 		System.out.println(list1.set(2, 30));
 		System.out.println("list1 = " + list1);
-		
-		list1.add(345);
-		System.out.println("list1 = " + list1);
+//		
+//		list1.add(345);
+//		System.out.println("list1 = " + list1);
 		
 		List <Integer> newList = new ArrayList<Integer>();
 		
